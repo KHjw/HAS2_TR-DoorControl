@@ -1,0 +1,182 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\teamh\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.9\\cores\\esp32"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\teamh\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.9\\variants\\ttgo-t1"
+  },
+  {
+    "Sourcefile": "c:\\Github\\HAS2-TR\\0_KHjinu\\HAS2_TR-DoorControl\\ArduinoOutput\\sketch\\HAS2_TR-DoorControl.ino.cpp",
+    "Include": "Adafruit_NeoPixel.h",
+    "Includepath": "C:\\Users\\teamh\\Documents\\Arduino\\libraries\\Adafruit_NeoPixel"
+  },
+  {
+    "Sourcefile": "c:\\Github\\HAS2-TR\\0_KHjinu\\HAS2_TR-DoorControl\\ArduinoOutput\\sketch\\HAS2_TR-DoorControl.ino.cpp",
+    "Include": "HAS2_MQTT.h",
+    "Includepath": "C:\\Users\\teamh\\Documents\\Arduino\\libraries\\HAS2_MQTT"
+  },
+  {
+    "Sourcefile": "c:\\Github\\HAS2-TR\\0_KHjinu\\HAS2_TR-DoorControl\\ArduinoOutput\\sketch\\HAS2_TR-DoorControl.ino.cpp",
+    "Include": "WiFi.h",
+    "Includepath": "C:\\Users\\teamh\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.9\\libraries\\WiFi\\src"
+  },
+  {
+    "Sourcefile": "c:\\Github\\HAS2-TR\\0_KHjinu\\HAS2_TR-DoorControl\\ArduinoOutput\\sketch\\HAS2_TR-DoorControl.ino.cpp",
+    "Include": "PubSubClient.h",
+    "Includepath": "C:\\Users\\teamh\\Documents\\Arduino\\libraries\\PubSubClient\\src"
+  },
+  {
+    "Sourcefile": "c:\\Github\\HAS2-TR\\0_KHjinu\\HAS2_TR-DoorControl\\ArduinoOutput\\sketch\\HAS2_TR-DoorControl.ino.cpp",
+    "Include": "HTTPUpdate.h",
+    "Includepath": "C:\\Users\\teamh\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.9\\libraries\\HTTPUpdate\\src"
+  },
+  {
+    "Sourcefile": "c:\\Github\\HAS2-TR\\0_KHjinu\\HAS2_TR-DoorControl\\ArduinoOutput\\sketch\\HAS2_TR-DoorControl.ino.cpp",
+    "Include": "HTTPClient.h",
+    "Includepath": "C:\\Users\\teamh\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.9\\libraries\\HTTPClient\\src"
+  },
+  {
+    "Sourcefile": "c:\\Github\\HAS2-TR\\0_KHjinu\\HAS2_TR-DoorControl\\ArduinoOutput\\sketch\\HAS2_TR-DoorControl.ino.cpp",
+    "Include": "WiFiClientSecure.h",
+    "Includepath": "C:\\Users\\teamh\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.9\\libraries\\WiFiClientSecure\\src"
+  },
+  {
+    "Sourcefile": "c:\\Github\\HAS2-TR\\0_KHjinu\\HAS2_TR-DoorControl\\ArduinoOutput\\sketch\\HAS2_TR-DoorControl.ino.cpp",
+    "Include": "Update.h",
+    "Includepath": "C:\\Users\\teamh\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.9\\libraries\\Update\\src"
+  },
+  {
+    "Sourcefile": "c:\\Github\\HAS2-TR\\0_KHjinu\\HAS2_TR-DoorControl\\ArduinoOutput\\sketch\\HAS2_TR-DoorControl.ino.cpp",
+    "Include": "SimpleTimer.h",
+    "Includepath": "C:\\Users\\teamh\\Documents\\Arduino\\libraries\\SimpleTimer"
+  },
+  {
+    "Sourcefile": "c:\\Github\\HAS2-TR\\0_KHjinu\\HAS2_TR-DoorControl\\ArduinoOutput\\sketch\\HAS2_TR-DoorControl.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\teamh\\Documents\\Arduino\\libraries\\Adafruit_NeoPixel\\Adafruit_NeoPixel.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\teamh\\Documents\\Arduino\\libraries\\Adafruit_NeoPixel\\esp.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\teamh\\Documents\\Arduino\\libraries\\Adafruit_NeoPixel\\esp8266.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\teamh\\Documents\\Arduino\\libraries\\Adafruit_NeoPixel\\kendyte_k210.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\teamh\\Documents\\Arduino\\libraries\\Adafruit_NeoPixel\\rp2040.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\teamh\\Documents\\Arduino\\libraries\\HAS2_MQTT\\HAS2_MQTT.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\teamh\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.9\\libraries\\WiFi\\src\\WiFi.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\teamh\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.9\\libraries\\WiFi\\src\\WiFiAP.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\teamh\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.9\\libraries\\WiFi\\src\\WiFiClient.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\teamh\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.9\\libraries\\WiFi\\src\\WiFiGeneric.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\teamh\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.9\\libraries\\WiFi\\src\\WiFiMulti.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\teamh\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.9\\libraries\\WiFi\\src\\WiFiSTA.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\teamh\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.9\\libraries\\WiFi\\src\\WiFiScan.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\teamh\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.9\\libraries\\WiFi\\src\\WiFiServer.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\teamh\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.9\\libraries\\WiFi\\src\\WiFiUdp.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\teamh\\Documents\\Arduino\\libraries\\PubSubClient\\src\\PubSubClient.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\teamh\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.9\\libraries\\HTTPUpdate\\src\\HTTPUpdate.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\teamh\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.9\\libraries\\HTTPClient\\src\\HTTPClient.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\teamh\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.9\\libraries\\WiFiClientSecure\\src\\WiFiClientSecure.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\teamh\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.9\\libraries\\WiFiClientSecure\\src\\esp_crt_bundle.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\teamh\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.9\\libraries\\WiFiClientSecure\\src\\ssl_client.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\teamh\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.9\\libraries\\Update\\src\\HttpsOTAUpdate.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\teamh\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.9\\libraries\\Update\\src\\Updater.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\teamh\\Documents\\Arduino\\libraries\\SimpleTimer\\SimpleTimer.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]

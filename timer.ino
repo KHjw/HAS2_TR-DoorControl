@@ -1,47 +1,44 @@
 void TimerInit(){
+  Serial.println("TimerInit");
   DoorCheckTimerId = DoorCheckTimer.setInterval(DoorCheckTime, DoorCheck);
   DoorCheckTimer.deleteTimer(DoorCheckTimerId); 
-  EmergencyTimerId = EmergencyTimer.setInterval(EmergencyTime, EmergencyCheck);
-  EmergencyTimer.deleteTimer(EmergencyTimerId);
 }
 
 void DoorCheck(){
-  String DoorReqSTR;
-  String DoorStateSTR;
-
   for(int i=0; i<2; i++){
-    DoorReqSTR += DoorEm_REQ[i];
-    DoorStateSTR += DoorEm_STATE[i];
+  if(digitalRead(EmSensor_PIN[i]) == HIGH)  DoorEm_STATE[i] = 1;
+  else                                      DoorEm_STATE[i] = 0;
   }
 
-  if(DoorReqSTR != DoorStateSTR){
-    Serial.print("Door State Error :: ");
-    if(IsRequestOpen == true){
-      Serial.println("Not Open");
+  if(DoorEm_REQ != DoorEm_STATE){
+    if(DoorEm_REQ[0] != DoorEm_STATE[0]){
+      Serial.print("Tagger Door Error :: ");
+      if(DoorEm_REQ[0] == 1){
+        Serial.println("Not Open");
+      }
+      else{
+        Serial.println("Not Closed");
+        if(DoorCheckCNT > DoorCheckLimit)    
+          has2_mqtt.Publish(my_topic, "ERROR");
+      }
     }
-    else
-      Serial.println("Not Closed");
+    if(DoorEm_REQ[1] != DoorEm_STATE[1]){
+      Serial.print("Survivor Door Error :: ");
+      if(DoorEm_REQ[1] == 1){
+        Serial.println("Not Open");
+      }
+      else{
+        Serial.println("Not Closed");
+        if(DoorCheckCNT > DoorCheckLimit)    
+          has2_mqtt.Publish(my_topic, "ERROR");
+      }
+    }
   }
   else{
+    DoorOpen(0,0);
+    GuideLightShow(0,0,0,0);
     DoorCheckCNT = 0;
-    DoorcheckTimer.deleteTimer(DoorcheckTimerId); 
+    DoorCheckTimer.deleteTimer(DoorCheckTimerId); 
   }
   DoorCheckCNT++;
-}
-
-void EmergencyCheck(){
-  if((digitalRead(tDOOR_EMERGENCY) == HIGH) && (digitalRead(sDOOR_EMERGENCY) == HIGH)){
-    Serial.println("ALL DOOR EMERGENCY OPEN");
-    GuideLightShow(1,1,1,1);
-  }
-  else{
-    if(digitalRead(tDOOR_EMERGENCY) == HIGH){
-      Serial.println("TAGGER DOOR EMERGENCY OPEN");
-      GuideLightShow(1,1,0,0);
-    }
-    if(digitalRead(sDOOR_EMERGENCY) == HIGH){
-      Serial.println("SURVIVOR DOOR EMERGENCY OPEN");
-      GuideLightShow(0,0,1,1);
-    }
-  }
 }

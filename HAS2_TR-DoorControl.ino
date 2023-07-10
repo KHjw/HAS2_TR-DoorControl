@@ -14,15 +14,14 @@ void setup(void) {
   Serial.begin(115200);
   Serial.println("=============================ESP SETUP=============================");
   has2_mqtt.Setup("KT_GiGA_6C64","ed46zx1198", callback);         // ALL, myMAC 구독
-  // has2_mqtt.AddSubscirbe("ALL");
   TimerInit();
-  EmInit();
-  NeopixelInit();
+  DoorSystemInit();
   Serial.println("===================================================================");
 }
 
 void loop(void) {
+  EmergencyCheck();
   has2_mqtt.ReadSubscirbe();
-//   game_ptr();
-//   DoorcheckTimer.run();
+  // game_ptr();
+  DoorCheckTimer.run();
 }

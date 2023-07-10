@@ -1,16 +1,14 @@
 #include <Arduino.h>
 
-#include <Adafruit_NeoPixel.h>
-
 #include <HAS2_MQTT.h>
 #include <SimpleTimer.h>
 
-#define NEOPIN       27
-
-#define tDOOR_PIN    18  
+#define tDOOR_PIN    18
 #define sDOOR_PIN    19
-#define tDOOR_EMERGENCY    21
-#define sDOOR_EMERGENCY    22
+#define tSENSOR_PIN  21
+#define sSENSOR_PIN  22
+#define tDOOR_EMERGENCY   5
+#define sDOOR_EMERGENCY   2
 
 #define tHOME_PIN    12
 #define tPUBLIC_PIN  13
