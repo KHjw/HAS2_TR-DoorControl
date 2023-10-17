@@ -10,18 +10,26 @@
 
 #include "DoorControl.h"
 
-void setup(void) {
+void setup(void){
   Serial.begin(115200);
   Serial.println("=============================ESP SETUP=============================");
-  has2_mqtt.Setup("KT_GiGA_6C64","ed46zx1198", callback);         // ALL, myMAC 구독
+  has2_mqtt.Setup("train_room", "Code3824@", callback);         // ALL, myMAC 구독
+  has2_mqtt.Situation("start", "my");
   TimerInit();
   DoorSystemInit();
+  // TestInit();
+  // CheckInit();
+  GuideLightShow(1,1,1,1);
+  DoorOpenRequest(1,1);
   Serial.println("===================================================================");
 }
 
-void loop(void) {
-  EmergencyCheck();
+void loop(void){
+  // SerialControl();
+  // EnterCheckLoop();
+  // EmergencyCheckLoop();
   has2_mqtt.ReadSubscirbe();
-  // game_ptr();
-  DoorCheckTimer.run();
+  // DoorCheckTimer.run();
+  // TaggerEnterTimer.run();
+  // SurvivorEnterTimer.run();
 }
